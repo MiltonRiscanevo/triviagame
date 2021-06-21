@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Archivo', sans-serif;
+    animation: changeColorBkg 60s linear infinite alternate both;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes changeColorBkg {
+/* 
+    0%{
+        background: rgb(251, 255, 0);
+    }
+    33.333%{
+        background: rgb(223, 162, 140);
+    }
+    66.666%{
+        background: rgb(158, 207, 207);
+    }
+    100%{
+        background: rgb(229, 186, 133);
+    } */
+
+    0%{
+        background: #79fb00;
+    }
+    33.333%{
+        background:  #ff004c;
+    }
+    66.666%{
+        background:  #ff6600;
+    }
+    100%{
+        background:  #04c2e4;
+    }
+}
+/*content trivia styles*/
+#trivia{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+    width: 50%;
+    height: 10%;
+    margin: 1% 1% 1% 1%;
+    box-shadow: 5px 5px 5px 5px;
+    border-style:outset;
+}
+
+.style_Form{
+    display: flex;
+    border-bottom-width: 5px;
+    border-bottom-color: tomato;
+    background: none;
+    color: wheat;
+}
+
+option{
+    color: black;
+}
+
+.title_trivia{
+
+    display: flex;
+    width: 50%;
+    background: blanchedalmond;
+    margin: 2%;
+    animation: styleAnimation 1s linear infinite alternate both ;
+    box-shadow: rgb(80, 71, 71) 5px 5px 4px 2px;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 1%;
+    padding: 1%;
+    font-weight: bold;
+    font-size: 100%;
+    background: white;
+    color: rgb(190, 155, 102);
+}
+
+
+
+
+@keyframes styleAnimation {
+    0%{
+        background: linear-gradient(60deg, #79fb00, #8d01a0, #031ba5);
+    }
+    33.333%{
+        background: linear-gradient(120deg, #ff004c, #e6036d, #fb0094);
+    }
+    66.666%{
+        background: linear-gradient(240deg, #ff6600, #04c2e4, #adad02);
+    }
+    100%{
+        background: linear-gradient(360deg, #79fb00, #8d01a0, #031ba5,
+        #ff004c, #e6036d, #fb0094, #ff6600, #04c2e4, #adad02, #00c3ff)
+    }
+}
+
+h2:hover{
+    color: darkcyan;
+    transition: 6s;    
+    animation: titleAnimation 1s linear infinite alternate both ;
+}
+
+
+
+.question-field{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: white;
+    border-bottom-color:white;
+    width: 60%;
+    height: 50%;
+    margin: 4% 4% 4% 4%;
+    padding: 1% 1% 1% 1%;
+}
+
+label{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 5px 5px 5px;
+}
+select{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 5px 5px 5px 5px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height:100%;
+    background-color: rgb(109, 103, 88);
+    justify-content: center;
+    align-items: center;
+    margin: 25%;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.answer{
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: wheat 1px 1px 1px 1px;
+    padding: 2%;
+    margin: px;
+}
+
+.question-items{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 5px 5px 5px 5px;
+}
+
+button{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 48%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 1% 1% 1% 1%;
+
+}
+
+span{
+    color: darkgoldenrod;
+}
+
+.endGame{
+    display: flex;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin: 25%;
+    width: 30%;
+    height: 30%;
+    background: black;
+    color: blanchedalmond;
+    font-weight: bold;
+    font-size:150%;
+}
+
+.init{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3%;
+    padding: 3%;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.crono{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+    background: gray;
+    margin: 2%;
+    padding: 3%;
+    font-weight: bold;
+}
